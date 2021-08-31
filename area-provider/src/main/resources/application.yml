@@ -1,0 +1,19 @@
+server:
+  port: 8061
+
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/test-area?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&serverTimezone=Hongkong&useSSL=true
+    username: root
+    password: admin
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+dubbo:
+  application:
+    name: area-provider #dubbo注册的服务名,唯一性
+  protocol:
+    port: 20881
+  registry:
+    address: zookeeper://127.0.0.1:2181 #注册zookeeper的地址
+  provider:
+    filter: ExceptionFilter,-exception

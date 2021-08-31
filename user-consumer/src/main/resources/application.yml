@@ -1,0 +1,8 @@
+server:
+  port: 8052
+
+dubbo:
+  application:
+    name: user-consumer #dubbo注册的服务名,唯一性
+  registry:
+    address: zookeeper://127.0.0.1:2181 #注册zookeeper的地址

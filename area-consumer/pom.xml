@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.liangzhicheng.dubbo</groupId>
+    <artifactId>area-consumer</artifactId>
+    <version>1.0.0</version>
+
+    <!-- spring boot核心依赖 -->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.3.2.RELEASE</version>
+    </parent>
+
+    <dependencies>
+        <!-- 引入basic-interface模块 -->
+        <dependency>
+            <groupId>com.liangzhicheng.dubbo</groupId>
+            <artifactId>basic-interface</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <!-- dubbo starter已经集成了zookeeper的客户端 -->
+        <dependency>
+            <groupId>com.alibaba.boot</groupId>
+            <artifactId>dubbo-spring-boot-starter</artifactId>
+            <version>0.2.0</version>
+        </dependency>
+    </dependencies>
+
+</project>
