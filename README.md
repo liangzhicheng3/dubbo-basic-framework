@@ -22,7 +22,7 @@
 
     修改各服务中的appliction.yml配置，包括数据库连接,Zoopeeker连接,Redis连接等
     需启动redis客户端(集成一些技术需要用到redis)
-    需启动Zoopeeker客户端(将服务注册到Zoopeeker服务中心中)
+    需启动Zoopeeker客户端(将服务注册到Zoopeeker服务中心中，版本3.6.3)
     启动类:各服务中Application应用启动类
 
 swagger接口文档
