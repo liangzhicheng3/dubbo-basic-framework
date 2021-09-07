@@ -73,11 +73,9 @@ public class ExceptionFilter implements Filter {
                         return result;
                     }
                     //如果是自定义异常，直接返回
-                    if (className.startsWith("org.springframework")) {
-                        return result;
-                    } else if (className.startsWith("com.fasterxml.jackson")) {
-                        return result;
-                    } else if (className.startsWith("com.liangzhicheng.common")) {
+                    if (className.startsWith("org.springframework") 
+                        || className.startsWith("com.fasterxml.jackson") 
+                        || className.startsWith("com.liangzhicheng.common")) {
                         return result;
                     }
                     //如果是dubbo自身的异常，直接返回
