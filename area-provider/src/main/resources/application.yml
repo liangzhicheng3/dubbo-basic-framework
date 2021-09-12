@@ -17,3 +17,14 @@ dubbo:
     address: zookeeper://127.0.0.1:2181 #注册zookeeper的地址
   provider:
     filter: ExceptionFilter,-exception
+
+mybatis-plus:
+  check-config-location: true
+  configuration:
+    map-underscore-to-camel-case: true
+
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql

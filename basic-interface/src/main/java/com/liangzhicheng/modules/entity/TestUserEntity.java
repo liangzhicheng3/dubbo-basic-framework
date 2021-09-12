@@ -84,7 +84,7 @@ public class TestUserEntity extends Model<TestUserEntity> {
     private String openId;
 
     @Override
-    protected Serializable pkVal() {
+    public Serializable pkVal() {
         return null;
     }
 
